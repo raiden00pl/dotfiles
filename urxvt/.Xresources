@@ -1,0 +1,67 @@
+#include </home/raiden00/.sourcerer.Xcolors>
+urxvt.termName: rxvt-unicode
+
+!! Font
+URxvt.font: xft:monaco:size=11
+
+! interface
+urxvt.scrollBar: false
+urxvt.transparent: false
+urxvt.shading: 38
+
+! aperance
+!urxvt.foreground: gray
+!urxvt.background: black
+
+URxvt.perl-ext-common: default,tabbedex,clipboard,resize-font,url-select,keyboard-select
+
+! url-select
+URxvt.url-select.launcher:  palemoon
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+! clipboard
+urxvt.keysym.S-Insert:   perl:clipboard:paste
+! urxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+! urxvt.clipboard.copycmd:  xsel -ib
+! urxvt.clipboard.pastecmd: xsel -ob
+
+! resize-font
+URxvt.keysym.C-Down:     resize-font:smaller
+URxvt.keysym.C-Up:       resize-font:bigger
+!URxvt.keysym.C-minus:    command:\000
+
+! tabbedex
+URxvt.tabbedex.autohide: true
+URxvt.tabbedex.no-tabbedex-keys: true
+
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
+URxvt.keysym.Control-M-Tab: perl:tabbedex:prev_tab
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.C-apostrophe:    \033[39;6~
+URxvt.keysym.C-quotedbl:      \033[42;6~
+URxvt.keysym.C-plus:          \033[43;6~
+URxvt.keysym.C-comma:         \033[44;6~
+URxvt.keysym.C-minus:         \033[45;6~
+URxvt.keysym.C-period:        \033[46;6~
+URxvt.keysym.C-colon:         \033[58;6~
+URxvt.keysym.C-semicolon:     \033[59;6~
+URxvt.keysym.C-equal:         \033[61;6~
+URxvt.keysym.C-question:      \033[63;6~
+
+URxvt.keysym.C-0:             \033[48;6~
+URxvt.keysym.C-1:             \033[49;6~
+URxvt.keysym.C-2:             \033[50;6~
+URxvt.keysym.C-3:             \033[51;6~
+URxvt.keysym.C-4:             \033[52;6~
+URxvt.keysym.C-5:             \033[53;6~
+URxvt.keysym.C-6:             \033[54;6~
+URxvt.keysym.C-7:             \033[55;6~
+URxvt.keysym.C-8:             \033[56;6~
+URxvt.keysym.C-9:             \033[57;6~
